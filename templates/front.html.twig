@@ -33,7 +33,6 @@
 </head>
 
 <body>
-{% block body %}
     
 
 	<!-- Start Header Area -->
@@ -105,7 +104,6 @@
 		</div>
 	</header>
 	<!-- End Header Area -->
-
 	<!-- start banner Area -->
 	<section class="banner-area">
 		<div class="container">
@@ -152,7 +150,7 @@
 		</div>
 	</section>
 	<!-- End banner Area -->
-
+{% block body %}
 	<!-- start features Area -->
 	<section class="features-area section_gap">
 		<div class="container">
@@ -930,6 +928,7 @@
 			</div>
 		</div>
 	</section>
+	{% endblock %}
 	<!-- End brand Area -->
 
 	<!-- Start related-product Area -->
@@ -944,8 +943,11 @@
 					<div class="single-footer-widget">
 						<h6>About Us</h6>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore dolore
-							magna aliqua.
+						SPORTSVERSE est dédiés
+aux 					sportifs et à tous ceux qui sont
+						intéressés par les équipements sportifs pour
+						les faciliter tout type de shopping ou
+						coaching privée
 						</p>
 					</div>
 				</div>
@@ -1031,7 +1033,7 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Sport
 	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
 	<script src="{{asset('js/gmaps.min.js')}}"></script>
 	<script src="{{asset('js/main.js')}}"></script>
-{% endblock %}
+
 </body>
 
 </html>
