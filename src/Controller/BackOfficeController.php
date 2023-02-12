@@ -12,14 +12,14 @@ class BackOfficeController extends AbstractController
     public function index(): Response
     {
         return $this->render('back.html.twig', [
-            'controller_name' => 'DashboardController',
+            'controller_name' => 'BackOfficeController',
         ]);
     }
     #[Route('/users', name: 'app_users')]
     public function users_list(): Response
     {
         return $this->render('back_office/back.html.twig', [
-            'controller_name' => 'DashboardController',
+            'controller_name' => 'BackOfficeController',
         ]);
     }
 }
