@@ -18,7 +18,7 @@ class BackOfficeController extends AbstractController
     #[Route('/users', name: 'app_users')]
     public function users_list(): Response
     {
-        return $this->render('back_office/back.html.twig', [
+        return $this->render('back_office/users.html.twig', [
             'controller_name' => 'BackOfficeController',
         ]);
     }
