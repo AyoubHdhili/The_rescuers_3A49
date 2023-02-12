@@ -78,13 +78,16 @@
 									</ul>
 								</li>
 								<li class="nav-item submenu dropdown">
-									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Coach</a>
+									<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Coaching</a>
 									<ul class="dropdown-menu">
 										<li class="nav-item">
 											<a class="nav-link" href="blog.html">Resever</a>
 										</li>
 										<li class="nav-item">
 											<a class="nav-link" href="single-blog.html">Suivi Seance</a>
+										</li>
+										<li class="nav-item">
+											<a class="nav-link" href="blog.html">Approuver Seance</a>
 										</li>
 									</ul>
 								</li>
@@ -144,14 +147,14 @@
 							<div class="row single-slide align-items-center d-flex">
 								<div class="col-lg-5 col-md-6">
 									<div class="banner-content">
-										<h1>volonté augumente<br>Les difficulté diminue</h1>
+										{% block citation %}<h1>La volonté <br> augumente,<br>Les difficulté diminue</h1>{% endblock %}
 
 
 									</div>
 								</div>
 								<div class="col-lg-7">
 									<div class="banner-img">
-										<img class="img-fluid" src="{{asset('img/banner/pub.jfif')}}" alt="">
+										<img class="img-fluid" src="{% block image_main %}{{asset('img/banner/pub.jfif')}}{% endblock %}" alt="">
 									</div>
 								</div>
 							</div>
