@@ -114,14 +114,19 @@
 						<div class="row single-slide align-items-center d-flex">
 							<div class="col-lg-5 col-md-6">
 								<div class="banner-content">
-									<h1 >volonté augumente<br>Les difficulté diminue</h1>
-
+								<h1>
+									{% block citation %}
+									Quand <br> la volonté augumente, <br>Les difficulté diminue
+									{% endblock %}
+								</h1>
 
 								</div>
 							</div>
 							<div class="col-lg-7">
 								<div class="banner-img">
-									<img class="img-fluid" src="{{asset('img/banner/pub.jfif')}}" alt="">
+								
+									<img class="img-fluid" src={% block main_image %}"{{asset('img/banner/pub.jfif')}}"{% endblock %} alt="">
+								
 								</div>
 							</div>
 						</div>
